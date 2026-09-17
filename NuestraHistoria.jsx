@@ -45,15 +45,15 @@ Con todo el amor del universo, esta niña que solo tiene ojitos para ti.
 J.`;
 
 const IMAGES = [
-  { id: 'img_1', src: '/12_julio_2026.jpeg',   date: '2026-07-12' },
-  { id: 'img_2', src: '/13_julio_2026.jpeg',   date: '2026-07-13' },
-  { id: 'img_3', src: '/17_julio_2026.jpeg',   date: '2026-07-17' },
-  { id: 'img_4', src: '/18_julio_2026.jpeg',   date: '2026-07-18' },
-  { id: 'img_5', src: '/18_julio_2026_2.jpeg', date: '2026-07-18' },
-  { id: 'img_6', src: '/22_julio_2026.jpeg',   date: '2026-07-22' },
-  { id: 'img_7', src: '/26_julio_2026.jpeg',   date: '2026-07-26' },
-  { id: 'img_8', src: '/27_julio_2026.jpeg',   date: '2026-07-27' },
-  { id: 'img_9', src: '/27_julio_2026_2.jpeg', date: '2026-07-27' },
+  { id: 'img_1', src: `${import.meta.env.BASE_URL}12_julio_2026.jpeg`,   date: '2026-07-12' },
+  { id: 'img_2', src: `${import.meta.env.BASE_URL}13_julio_2026.jpeg`,   date: '2026-07-13' },
+  { id: 'img_3', src: `${import.meta.env.BASE_URL}17_julio_2026.jpeg`,   date: '2026-07-17' },
+  { id: 'img_4', src: `${import.meta.env.BASE_URL}18_julio_2026.jpeg`,   date: '2026-07-18' },
+  { id: 'img_5', src: `${import.meta.env.BASE_URL}18_julio_2026_2.jpeg`, date: '2026-07-18' },
+  { id: 'img_6', src: `${import.meta.env.BASE_URL}22_julio_2026.jpeg`,   date: '2026-07-22' },
+  { id: 'img_7', src: `${import.meta.env.BASE_URL}26_julio_2026.jpeg`,   date: '2026-07-26' },
+  { id: 'img_8', src: `${import.meta.env.BASE_URL}27_julio_2026.jpeg`,   date: '2026-07-27' },
+  { id: 'img_9', src: `${import.meta.env.BASE_URL}27_julio_2026_2.jpeg`, date: '2026-07-27' },
 ];
 
 function getCounterParts(dateStr) {
@@ -255,7 +255,7 @@ export default function NuestraHistoria() {
           <div className="song-card" style={{ marginTop: 22 }}>
             <audio
               controls
-              src="/honey_bee.mp3"
+              src={`${import.meta.env.BASE_URL}honey_bee.mp3`}
               style={{ width: '100%', display: 'block', borderRadius: 10 }}
             >
               Tu navegador no soporta audio.
